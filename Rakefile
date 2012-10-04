@@ -11,12 +11,12 @@ rescue LoadError
 end
 
 jt = Jeweler::Tasks.new do |gem|
-  gem.name = "syslog-logger"
-  gem.summary = "An improved Logger replacement that logs to syslog. It is almost drop-in with a few caveats."
-  gem.description = "An improved Logger replacement that logs to syslog. It is almost drop-in with a few caveats."
-  gem.email = "teamplatform@ngmoco.com"
-  gem.homepage = "http://github.com/ngmoco/syslog_logger"
-  gem.authors = ["Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]
+  gem.name = "syslog-ml-logger"
+  gem.summary = "An improved Logger replacement that logs multiple-lines to syslog. It is almost drop-in with a few caveats."
+  gem.description = "An improved Logger replacement that logs multiple-lines to syslog. It is almost drop-in with a few caveats."
+  gem.email = "daniel304@chello.nl"
+  gem.homepage = "https://github.com/Daniel304/syslog-ml-logger"
+  gem.authors = ["Daniel van den Oord;Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]
   gem.files    = FileList["lib/syslog-logger.rb", "lib/syslog-formatter.rb", "README.rdoc"]
   gem.test_files = FileList["test/test_syslog_logger.rb"]
   gem.has_rdoc = true
