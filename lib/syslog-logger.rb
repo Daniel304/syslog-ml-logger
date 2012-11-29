@@ -171,7 +171,7 @@ class Logger::Syslog
     def cut(line)
       msgs = []
       (0..(line.length / MAXLENGTH)).each do |i|
-        msgs << line[i*MAXLENGTH, MAXLENGTH]
+        msgs << line[i*MAXLENGTH, MAXLENGTH + 1]
       end
       return msgs
     end
