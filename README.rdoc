@@ -1,6 +1,7 @@
 = SyslogMlLogger
 
 http://github.com/Daniel304/syslog-ml-logger
+http://rubygems.org/gems/syslog-ml-logger
 
 == DESCRIPTION:
 
