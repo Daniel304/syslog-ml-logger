@@ -5,16 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "syslog-ml-logger"
-  s.version = "1.7.3"
+  s.version = "1.8.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-<<<<<<< HEAD
-  s.authors = ["Daniel van den Oord;Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]
-  s.date = "2012-10-19"
-=======
-  s.authors = ["Daniel van den Oord;Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens; Erwin Rohde"]
-  s.date = "2012-10-04"
->>>>>>> 7d4fd3d8b51008fdb191e5e179da12b0774b7270
+  s.authors = ["Daniel van den Oord;Erwin Rohde,Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]
+  s.date = "2012-11-30"
   s.description = "An improved Logger replacement that logs multiple-lines to syslog. It is almost drop-in with a few caveats."
   s.email = "daniel304@chello.nl"
   s.extra_rdoc_files = [

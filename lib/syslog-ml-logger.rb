@@ -6,7 +6,7 @@ class Logger::Syslog
   include Logger::Severity
 
   # The version of Logger::Syslog you are using.
-  VERSION = '1.8'
+  VERSION = '1.8.0'
 
   # Max length of syslog string
   MAXLENGTH = 1024
