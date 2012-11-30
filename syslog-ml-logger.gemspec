@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = "1.6.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Daniel van den Oord;Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]
+  s.authors = ["Daniel van den Oord;Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens; Erwin Rohde"]
   s.date = "2012-10-04"
   s.description = "An improved Logger replacement that logs multiple-lines to syslog. It is almost drop-in with a few caveats."
   s.email = "daniel304@chello.nl"

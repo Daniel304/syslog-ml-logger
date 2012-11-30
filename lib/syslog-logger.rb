@@ -8,6 +8,9 @@ class Logger::Syslog
   # The version of Logger::Syslog you are using.
   VERSION = '1.6.8'
 
+  # Max length of syslog string
+  MAXLENGTH = 1024
+
   # From 'man syslog.h':
   # LOG_EMERG   A panic condition was reported to all processes.
   # LOG_ALERT   A condition that should be corrected immediately.
@@ -119,8 +122,10 @@ class Logger::Syslog
     end
 
     # breakup multiple lines into multiple syslog messages
-    message.each_line do | msg |
-      SYSLOG.send(LEVEL_LOGGER_MAP[severity], format_message(format_severity(severity), Time.now, progname, clean(msg.chop)))
+    message.each_line do | line |
+      cut(line).each do |msg|
+        SYSLOG.send(LEVEL_LOGGER_MAP[severity], format_message(format_severity(severity), Time.now, progname, clean(msg.chop)))
+      end
     end
     true
   end
@@ -162,4 +167,12 @@ class Logger::Syslog
       return message
     end
 
+    # Cut lines in strings having a max length of 1024
+    def cut(line)
+      msgs = []
+      (0..(line.length / MAXLENGTH)).each do |i|
+        msgs << line[i*MAXLENGTH, MAXLENGTH + 1]
+      end
+      return msgs
+    end
 end
