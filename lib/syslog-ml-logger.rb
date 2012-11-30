@@ -6,7 +6,7 @@ class Logger::Syslog
   include Logger::Severity
 
   # The version of Logger::Syslog you are using.
-  VERSION = '1.6.8'
+  VERSION = '1.8'
 
   # Max length of syslog string
   MAXLENGTH = 1024
@@ -122,7 +122,7 @@ class Logger::Syslog
     end
 
     # breakup multiple lines into multiple syslog messages
-    message.each_line do | line |
+    message.each_line do | msg |
       cut(line).each do |msg|
         SYSLOG.send(LEVEL_LOGGER_MAP[severity], format_message(format_severity(severity), Time.now, progname, clean(msg.chop)))
       end
