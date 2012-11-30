@@ -18,6 +18,7 @@ will be ignored.
 This particular Logger::Syslog improves the original by correctly mapping Rails log severities to
 the Syslog counterparts.  It also adds the ability to select a syslog facility other than "user."
 
+Version 1.8.1 fixed missing last character thanks to fork of scambra.
 Version 1.8.0 cuts lines longer then 1024 characters in multiple lines cause syslog cuts them off.
 Version 1.7.3 sends multiple lines to the syslog server instead of one large line which is cut of.
 Version 1.6.7 takes a formatter as logger does and uses call to format the message.

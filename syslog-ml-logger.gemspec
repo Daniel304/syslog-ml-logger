@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "syslog-ml-logger"
-  s.version = "1.8.0"
+  s.version = "1.8.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel van den Oord;Erwin Rohde,Eric Hodel; Chris Powell; Matthew Boeh; Ian Lesperance; Dana Danger; Brian Smith; Ashley Martens"]

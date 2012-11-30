@@ -25,7 +25,7 @@ jt = Jeweler::Tasks.new do |gem|
 end
 Jeweler::GemcutterTasks.new
 
-task :default => :package
+task :default => :test
 
 $dir = File.dirname(__FILE__)
 

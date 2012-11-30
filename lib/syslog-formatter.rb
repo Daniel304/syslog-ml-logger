@@ -17,14 +17,6 @@ class Logger::SyslogFormatter < Logger::Formatter
 
   protected
 
-  def format_datetime(time)
-    if @datetime_format.nil?
-      time.strftime("%H:%M:%S.") << "%06d " % time.usec
-    else
-      time.strftime(@datetime_format)
-    end
-  end
-
   def msg2str(msg)
     case msg
     when ::String
@@ -36,5 +28,4 @@ class Logger::SyslogFormatter < Logger::Formatter
       msg.inspect
     end
   end
-   
 end
