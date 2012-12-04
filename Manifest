@@ -1,7 +1,7 @@
-lib/syslog-logger.rb
+lib/syslog-ml-logger.rb
 lib/syslog-formatter.rb
 Manifest
 Rakefile
 README.rdoc
-syslog-logger.gemspec
+syslog-ml-logger.gemspec
 test/test_syslog_logger.rb
